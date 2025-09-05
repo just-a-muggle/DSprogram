@@ -1,0 +1,10 @@
+^E:\考研资料\DS\PROGRAM\BUILD\CMAKEFILES\1C5E4B304AE58FF61105632E418C17BC\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/考研资料/DS/Program -BE:/考研资料/DS/Program/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/考研资料/DS/Program/build/DS_program.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

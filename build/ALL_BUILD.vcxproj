@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2775EB6A-DC8E-3250-8434-C420E4A704C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\考研资料\DS\Program\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/考研资料/DS/Program/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/考研资料/DS/Program -BE:/考研资料/DS/Program/build --check-stamp-file E:/考研资料/DS/Program/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\考研资料\DS\Program\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/考研资料/DS/Program/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/考研资料/DS/Program -BE:/考研资料/DS/Program/build --check-stamp-file E:/考研资料/DS/Program/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\考研资料\DS\Program\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/考研资料/DS/Program/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/考研资料/DS/Program -BE:/考研资料/DS/Program/build --check-stamp-file E:/考研资料/DS/Program/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\考研资料\DS\Program\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/考研资料/DS/Program/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SE:/考研资料/DS/Program -BE:/考研资料/DS/Program/build --check-stamp-file E:/考研资料/DS/Program/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeCXXCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeRCCompiler.cmake;E:\考研资料\DS\Program\build\CMakeFiles\4.0.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\考研资料\DS\Program\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\ZERO_CHECK.vcxproj">
+      <Project>{0B44A4A1-D089-3B45-9C3A-197CF17DC347}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\2016_43_QuickSort.vcxproj">
+      <Project>{A3A1B803-1691-321E-8AF4-0ED4A783CB65}</Project>
+      <Name>2016_43_QuickSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\2019_41_HeadAndTailInsert.vcxproj">
+      <Project>{CBAB7067-AB05-3052-99A8-3DEC62F1215D}</Project>
+      <Name>2019_41_HeadAndTailInsert</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\Btraining.vcxproj">
+      <Project>{6E2BEF8B-937D-363D-A777-30BD5EF07EDE}</Project>
+      <Name>Btraining</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\_TEMPLATE_HeadAndTailInsert.vcxproj">
+      <Project>{16547B2D-0412-3A68-A381-1ED56215A87C}</Project>
+      <Name>_TEMPLATE_HeadAndTailInsert</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\findK.vcxproj">
+      <Project>{1AC5DDDC-A52E-3CCC-819B-AAD6EB7AF0D0}</Project>
+      <Name>findK</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\考研资料\DS\Program\build\quickSort.vcxproj">
+      <Project>{53EAD276-4CBD-3902-892F-C2C683E185CB}</Project>
+      <Name>quickSort</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
