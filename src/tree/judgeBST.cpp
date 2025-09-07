@@ -7,7 +7,6 @@
 #include <vector>
 
 using namespace std;
-
 struct BiTNode{
     int data;
     BiTNode *lChild;
@@ -15,25 +14,18 @@ struct BiTNode{
     BiTNode(int x): data(x), lChild(nullptr), rChild(nullptr){}
 };
 
-vector<int> width(10010, 0);  // 每层节点个数
+int temp = -100010;
+bool isBST = true;
 
-void PreOrder(BiTNode *root, int level){
-    if(root == nullptr)return;
-    width.at(level) ++;
-    PreOrder(root->lChild, level + 1);  //遍历左子树
-    PreOrder(root->rChild, level + 1);  //遍历右子树
+void InOrder(BiTNode *root){
+    if(root == nullptr) return;
+    InOrder(root ->lChild);
+    if(root->data >= temp) temp = root->data;
+    else isBST = false;
+    InOrder(root->rChild);
 }
 
-void treeWidth(BiTNode *root){
-    PreOrder(root, 0);
-    int maxWidth = 0;
-    for(int i = 0; i <width.size(); i ++)
-        if(width.at(i) > maxWidth)
-            maxWidth = width.at(i);
-    
-    cout << "This tree's width is: " << maxWidth;
-}
-
+///测试///
 int main()
 {
      int n;
@@ -57,8 +49,13 @@ int main()
         if (right < n) nodes[i]->rChild = nodes[right];
     }
 
-    treeWidth(nodes.at(0));
-
+    InOrder(nodes.at(0));
+    if (isBST)
+        cout << "Yes, it is BST";
+    else 
+        cout << "No, it is not BST";
+  
+    
     for (auto &node : nodes) delete node;
     cout << endl << ">> input any key to exit: ";
     cin.get();

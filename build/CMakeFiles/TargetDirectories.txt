@@ -9,5 +9,6 @@ E:/考研资料/DS/Program/build/CMakeFiles/levelOrder.dir
 E:/考研资料/DS/Program/build/CMakeFiles/treeHeight.dir
 E:/考研资料/DS/Program/build/CMakeFiles/treeWidth.dir
 E:/考研资料/DS/Program/build/CMakeFiles/resolveWPL.dir
+E:/考研资料/DS/Program/build/CMakeFiles/judgeBST.dir
 E:/考研资料/DS/Program/build/CMakeFiles/ALL_BUILD.dir
 E:/考研资料/DS/Program/build/CMakeFiles/ZERO_CHECK.dir
