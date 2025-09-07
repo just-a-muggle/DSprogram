@@ -14,3 +14,8 @@ ADD_EXECUTABLE(2016_43_QuickSort ${CMAKE_SOURCE_DIR}/src/2016_43_QuickSort.cpp)
 ADD_EXECUTABLE(Btraining ${CMAKE_SOURCE_DIR}/src/2016_43_QuickSort.cpp)
 ADD_EXECUTABLE(_TEMPLATE_HeadAndTailInsert ${CMAKE_SOURCE_DIR}/src/_TEMPLATE_HeadAndTailInsert.cpp)
 ADD_EXECUTABLE(2019_41_HeadAndTailInsert ${CMAKE_SOURCE_DIR}/src/2019_41_HeadAndTailInsert.cpp)
+#树和二叉树
+ADD_EXECUTABLE(PreInPost_Order ${CMAKE_SOURCE_DIR}/src/tree/PreInPost_Order.cpp)
+ADD_EXECUTABLE(levelOrder ${CMAKE_SOURCE_DIR}/src/tree/levelOrder.cpp)
+ADD_EXECUTABLE(treeHeight ${CMAKE_SOURCE_DIR}/src/tree/treeHeight.cpp)
+ADD_EXECUTABLE(treeWidth ${CMAKE_SOURCE_DIR}/src/tree/treeWidth.cpp)

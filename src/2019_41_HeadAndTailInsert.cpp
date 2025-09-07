@@ -68,7 +68,6 @@ void reorderList(Node* head)
 
         l1 = n1;
         l2 = n2;
-
     }
 }
 
@@ -100,5 +99,6 @@ int main()
 
     cout << "重排后: ";
     printList(head);
-    
+
+    cin.get();
 }
